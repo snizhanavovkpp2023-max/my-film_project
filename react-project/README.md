@@ -14,3 +14,44 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+## Cinefy 
+React + Vite проєкт для перегляду фільмів з використанням TMDB API, системою авторизації та списком обраного.
+
+## Що зроблено:
+
+- ## Система авторизації (Login Page)
+ - Сторінка входу з повною валідацією полів
+ - Перевірка наявності логіна.
+ - Валідація формату Email (через regex).
+ - Перевірка довжини пароля (мін. 4 символи).
+ - Реалізовано перенаправлення (Maps) на головну після успішного входу.
+
+- ## Головна сторінка (Home + API)
+ - Компонент, що взаємодіє із зовнішнім сервісом TMDB:
+ - Автоматичне завантаження "Popular Movies" при старті.
+ - Функціональний пошук фільмів за ключовим словом.
+ - Обробка станів завантаження (loading) та помилок (error).
+
+- ## Список "Обраного" (Favorites)
+ - Можна натиснути на "серце" на будь-якій картці фільму.
+ - Фільм автоматично додається у твій особистий список.
+ - Збереження: Навіть якщо оновити сторінку, список не зникне (використовується localStorage).
+
+ - ## MovieCard
+  Універсальна картка з постером, датою релізу та інтерактивною кнопкою.
+
+ - ## NavBar
+  Навігація, яка відображається лише для авторизованих користувачів.
+
+
+ ## Запуск проєкту
+ ## Встановлення залежностей:
+ - npm install
+
+ ## Запуск у режимі розробки:
+ - npm run dev
+ 
+ ## Збірка проєкту:
+ - npm run build
