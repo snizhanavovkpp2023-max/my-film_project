@@ -3,7 +3,7 @@ import { createContext, useState, useContext, useEffect } from "react";
 const MovieContext = createContext();
 const API = "http://localhost:5000/api";
 
-export const useMovieContext = () => useContext(MovieContext);
+const useMovieContext = () => useContext(MovieContext);
 
 export const MovieProvider = ({ children }) => {
     const [favorites, setFavorites] = useState([]);
@@ -85,4 +85,6 @@ export const MovieProvider = ({ children }) => {
     const value = { favorites, addToFavorites, removeFromFavorites, isFavorite, currentUser, login, logout };
 
     return <MovieContext.Provider value={value}>{children}</MovieContext.Provider>;
+    
 };
+export { useMovieContext };
