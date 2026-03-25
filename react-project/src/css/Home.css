@@ -5,10 +5,10 @@
 }
 
 .search-form {
-  max-width: 800px; /* Трохи збільшимо ширину пошуку */
+  max-width: 800px; 
   margin: 2rem auto;
   display: flex;
-  gap: 0; /* Приберемо відступ, щоб злити інпут і кнопку, або залиште 10px */
+  gap: 0; 
   padding: 0 1rem;
 }
 

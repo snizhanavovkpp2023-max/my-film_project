@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useMovieContext } from "../contexts/MovieContext";
 import "../css/Login.css";
 
-function Login({ onLogin }) {
+function Login() {
     const initialValues = { username: "", email: "", password: "" };
     const [formValues, setFormValues] = useState(initialValues);
     const [formErrors, setFormErrors] = useState({});
     const [isSubmit, setIsSubmit] = useState(false);
 
     const navigate = useNavigate();
+    const { login } = useMovieContext();
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -23,8 +25,10 @@ function Login({ onLogin }) {
 
     useEffect(() => {
         if (Object.keys(formErrors).length === 0 && isSubmit) {
-            onLogin();
-            navigate("/");
+            login(formValues).then(data => {
+                if (data.success) navigate("/")
+                else setFormErrors({ password: data.message })
+            })
         }
     }, [formErrors]);
 
@@ -46,22 +50,18 @@ function Login({ onLogin }) {
     };
 
     return (
-        <div className="login-page"> {/* Унікальний клас */}
-            {Object.keys(formErrors).length === 0 && isSubmit && (
-                <div className="login-success-msg">Signed in successfully</div>
-            )}
-            
+        <div className="login-page">
             <form className="login-form-card" onSubmit={handleSubmit}>
                 <h1 className="login-title">Login Form</h1>
-                
+
                 <div className="login-field-group">
                     <label>Username</label>
-                    <input 
-                        className="login-input" 
-                        type="text" 
-                        name="username" 
-                        placeholder="Username" 
-                        value={formValues.username} 
+                    <input
+                        className="login-input"
+                        type="text"
+                        name="username"
+                        placeholder="Username"
+                        value={formValues.username}
                         onChange={handleChange}
                     />
                     <p className="login-error-text">{formErrors.username}</p>
@@ -69,12 +69,12 @@ function Login({ onLogin }) {
 
                 <div className="login-field-group">
                     <label>Email</label>
-                    <input 
-                        className="login-input" 
-                        type="email" 
-                        name="email" 
-                        placeholder="Email" 
-                        value={formValues.email} 
+                    <input
+                        className="login-input"
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        value={formValues.email}
                         onChange={handleChange}
                     />
                     <p className="login-error-text">{formErrors.email}</p>
@@ -82,12 +82,12 @@ function Login({ onLogin }) {
 
                 <div className="login-field-group">
                     <label>Password</label>
-                    <input 
-                        className="login-input" 
-                        type="password" 
-                        name="password" 
-                        placeholder="Password" 
-                        value={formValues.password} 
+                    <input
+                        className="login-input"
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                        value={formValues.password}
                         onChange={handleChange}
                     />
                     <p className="login-error-text">{formErrors.password}</p>

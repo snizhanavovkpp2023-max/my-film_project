@@ -1,0 +1,262 @@
+[
+  {
+    "username": "snizhana__vovk",
+    "email": "snizhana9606@gmail.com",
+    "password": "1234",
+    "favorites": [
+      {
+        "adult": false,
+        "backdrop_path": "/sdZSjtGUTSN8B3al5o0f2WoQfQQ.jpg",
+        "belongs_to_collection": {
+          "id": 87096,
+          "name": "Аватар | Колекція",
+          "poster_path": "/3C5brXxnBxfkeKWwA1Fh4xvy4wr.jpg",
+          "backdrop_path": "/6qkJLRCZp9Y3ovXti5tSuhH0DpO.jpg"
+        },
+        "budget": 350000000,
+        "genres": [
+          {
+            "id": 878,
+            "name": "Фантастика"
+          },
+          {
+            "id": 12,
+            "name": "Пригоди"
+          },
+          {
+            "id": 14,
+            "name": "Фентезі"
+          }
+        ],
+        "homepage": "",
+        "id": 83533,
+        "imdb_id": "tt1757678",
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_title": "Avatar: Fire and Ash",
+        "overview": "Третя подорож на Пандору не стане спокійною прогулянкою для Джейка Саллі. Попри те, що він остаточно став частиною світу На'ві та оберіг власну сім'ю, цей спокій виявляється тимчасовим. Повернення старих ворогів з'єднується з виникненням абсолютно нової загрози. Клан Попелу — це На'ві, про яких раніше не чули, і їхні методи далекі від гармонії, властивої іншим племенам. Родина Джейка опиняється в самому центрі цього конфлікту ...",
+        "popularity": 322.8645,
+        "poster_path": "/w23g9sNNDxhzjUYWTZZYqa4cNiJ.jpg",
+        "production_companies": [
+          {
+            "id": 127928,
+            "logo_path": "/h0rjX5vjW5r8yEnUBStFarjcLT4.png",
+            "name": "20th Century Studios",
+            "origin_country": "US"
+          },
+          {
+            "id": 574,
+            "logo_path": "/8wdmrfGcDx3TJxYiiDksLzAW4pB.png",
+            "name": "Lightstorm Entertainment",
+            "origin_country": "US"
+          },
+          {
+            "id": 22213,
+            "logo_path": "/qx9K6bFWJupwde0xQDwOvXkOaL8.png",
+            "name": "TSG Entertainment",
+            "origin_country": "US"
+          }
+        ],
+        "production_countries": [
+          {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+          }
+        ],
+        "release_date": "2025-12-17",
+        "revenue": 1482195377,
+        "runtime": 198,
+        "spoken_languages": [
+          {
+            "english_name": "English",
+            "iso_639_1": "en",
+            "name": "English"
+          }
+        ],
+        "status": "Released",
+        "tagline": "Світ Пандори зміниться назавжди",
+        "title": "Аватар: Вогонь і Попіл",
+        "video": false,
+        "vote_average": 7.3,
+        "vote_count": 1925
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/qL4dBGLkWOVP5vImN7EEoqJQYd8.jpg",
+        "belongs_to_collection": null,
+        "budget": 200000000,
+        "genres": [
+          {
+            "id": 878,
+            "name": "Фантастика"
+          },
+          {
+            "id": 12,
+            "name": "Пригоди"
+          }
+        ],
+        "homepage": "",
+        "id": 687163,
+        "imdb_id": "tt12042730",
+        "origin_country": [
+          "US"
+        ],
+        "original_language": "en",
+        "original_title": "Project Hail Mary",
+        "overview": "Шкільний учитель Райланд Грейс прокидається на космічному кораблі за світлові роки від Землі без жодної згадки про себе чи свою місію. Пам’ять повертається — і з нею усвідомлення: він останній шанс людства зупинити згасання Сонця. Його зброя — наука, кмітливість і… несподіваний союзник, який змінить усе.",
+        "popularity": 318.4081,
+        "poster_path": "/Diwwr8A7xdZq1gVytOFMvh4aTa.jpg",
+        "production_companies": [
+          {
+            "id": 77973,
+            "logo_path": "/eUZ0kfE4uyO0JYIrjgUSOqWPqjK.png",
+            "name": "Lord Miller",
+            "origin_country": "US"
+          },
+          {
+            "id": 210099,
+            "logo_path": "/g5oRCNCi8kNVb8gEoSoIcqkhjmR.png",
+            "name": "Amazon MGM Studios",
+            "origin_country": "US"
+          },
+          {
+            "id": 84041,
+            "logo_path": "/nw4kyc29QRpNtFbdsBHkRSFavvt.png",
+            "name": "Pascal Pictures",
+            "origin_country": "US"
+          },
+          {
+            "id": 232193,
+            "logo_path": null,
+            "name": "Open Invite Entertainment",
+            "origin_country": "US"
+          },
+          {
+            "id": 22842,
+            "logo_path": "/buyfiDYTfPVTHxvYZ4yHu69zFPs.png",
+            "name": "Waypoint Entertainment",
+            "origin_country": "US"
+          }
+        ],
+        "production_countries": [
+          {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+          }
+        ],
+        "release_date": "2026-03-15",
+        "revenue": 140983746,
+        "runtime": 157,
+        "spoken_languages": [
+          {
+            "english_name": "English",
+            "iso_639_1": "en",
+            "name": "English"
+          },
+          {
+            "english_name": "Mandarin",
+            "iso_639_1": "zh",
+            "name": "普通话"
+          },
+          {
+            "english_name": "Russian",
+            "iso_639_1": "ru",
+            "name": "Pусский"
+          }
+        ],
+        "status": "Released",
+        "tagline": "",
+        "title": "Проєкт «Аве Марія»",
+        "video": false,
+        "vote_average": 8.173,
+        "vote_count": 454
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/nHxWyy18SvAZ8jJeemtS8k1UNjM.jpg",
+        "belongs_to_collection": null,
+        "budget": 50000000,
+        "genres": [
+          {
+            "id": 28,
+            "name": "Бойовик"
+          },
+          {
+            "id": 80,
+            "name": "Кримінал"
+          },
+          {
+            "id": 53,
+            "name": "Трилер"
+          }
+        ],
+        "homepage": "",
+        "id": 1290821,
+        "imdb_id": "tt32357218",
+        "origin_country": [
+          "GB",
+          "US"
+        ],
+        "original_language": "en",
+        "original_title": "Shelter",
+        "overview": "Майкл Мейсон живе на самоті у віддаленій хатині на шотландському острові, тікаючи від власного минулого. Коли він рятує дівчинку Джессі, це запускає ланцюг небезпечних подій: урядові структури оголошують полювання на нього, і на острів прибувають озброєні люди. Старанно приховане минуле Мейсона знову дає про себе знати: тепер йому доведеться стати на захист дитини й нарешті зіткнутися з тінями минулого, що приходять по нього.",
+        "popularity": 313.4164,
+        "poster_path": "/54YBR4702lBdlGPQBH9um0DUDAt.jpg",
+        "production_companies": [
+          {
+            "id": 22146,
+            "logo_path": "/v37N1mFeXNQfvPankg3feBhVvM7.png",
+            "name": "Black Bear Pictures",
+            "origin_country": "US"
+          },
+          {
+            "id": 218150,
+            "logo_path": null,
+            "name": "Punch Palace Productions",
+            "origin_country": "GB"
+          },
+          {
+            "id": 253186,
+            "logo_path": null,
+            "name": "CineMachine",
+            "origin_country": "US"
+          },
+          {
+            "id": 118472,
+            "logo_path": "/vafYjvjZwK4JaV5Hcm9vSzw6f9G.png",
+            "name": "Stampede Ventures",
+            "origin_country": "US"
+          }
+        ],
+        "production_countries": [
+          {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+          },
+          {
+            "iso_3166_1": "GB",
+            "name": "United Kingdom"
+          }
+        ],
+        "release_date": "2026-01-28",
+        "revenue": 48148603,
+        "runtime": 108,
+        "spoken_languages": [
+          {
+            "english_name": "English",
+            "iso_639_1": "en",
+            "name": "English"
+          }
+        ],
+        "status": "Released",
+        "tagline": "Її безпека. Його місія.",
+        "title": "Самітник",
+        "video": false,
+        "vote_average": 6.7,
+        "vote_count": 380
+      }
+    ]
+  }
+]

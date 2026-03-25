@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer-content">
-                <div className="footer-brand">Cinefy</div>
+                <div className="footer-brand">Cineffy</div>
                 <p>&copy; {new Date().getFullYear()} Усі права захищені</p>
             </div>
         </footer>

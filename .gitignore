@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+react-project/node_modules/
+
+# Build
+react-project/dist/
+react-project/coverage/
+react-project/playwright-report/
+react-project/test-results/
+
+# Environment
+.env
+.env.local
+react-project/.env
+
+# Logs
+*.log
