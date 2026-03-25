@@ -1,4 +1,4 @@
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMovieContext } from "../contexts/MovieContext";
 import "../css/Login.css";
@@ -42,19 +42,18 @@ function Login() {
 
     useEffect(() => {
         if (Object.keys(formErrors).length === 0 && isSubmit) {
-            login(formValues).then((data) => {
+            login(formValues).then(data => {
                 if (data.success) {
                     navigate("/");
                 } else {
-                    setFormErrors({ password: data.message || "Login failed" });
+                    setFormErrors({ password: data.message });
                     setIsSubmit(false);
                 }
-            }).catch(err => {
-                console.error(err);
+            }).catch(() => {
                 setIsSubmit(false);
             });
         }
-    }, [formErrors, isSubmit, login, formValues, navigate]); 
+    }, [formErrors, isSubmit, login, formValues, navigate]);
 
     return (
         <div className="login-page">
@@ -100,9 +99,7 @@ function Login() {
                     <p className="login-error-text">{formErrors.password}</p>
                 </div>
 
-                <button className="login-submit-btn" type="submit">
-                    Submit
-                </button>
+                <button className="login-submit-btn" type="submit">Submit</button>
             </form>
         </div>
     );

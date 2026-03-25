@@ -3,8 +3,6 @@ import { createContext, useState, useContext, useEffect } from "react";
 const MovieContext = createContext();
 const API = "http://localhost:5000/api";
 
-const useMovieContext = () => useContext(MovieContext);
-
 export const MovieProvider = ({ children }) => {
     const [favorites, setFavorites] = useState([]);
     const [currentUser, setCurrentUser] = useState(null);
@@ -50,11 +48,13 @@ export const MovieProvider = ({ children }) => {
                 body: JSON.stringify(formValues)
             });
             const data = await res.json();
+
             if (data.success) {
                 localStorage.setItem("currentUser", JSON.stringify(data.user));
                 setCurrentUser(data.user);
                 setFavorites(data.user.favorites || []);
             }
+
             return data;
         } catch (err) {
             console.error("Помилка логіну:", err);
@@ -82,9 +82,21 @@ export const MovieProvider = ({ children }) => {
 
     const isFavorite = (movieId) => favorites.some(m => m.id === movieId);
 
-    const value = { favorites, addToFavorites, removeFromFavorites, isFavorite, currentUser, login, logout };
+    const value = { 
+        favorites, 
+        addToFavorites, 
+        removeFromFavorites, 
+        isFavorite, 
+        currentUser, 
+        login, 
+        logout 
+    };
 
-    return <MovieContext.Provider value={value}>{children}</MovieContext.Provider>;
-    
+    return (
+        <MovieContext.Provider value={value}>
+            {children}
+        </MovieContext.Provider>
+    );
 };
-export { useMovieContext };
+
+export const useMovieContext = () => useContext(MovieContext);
