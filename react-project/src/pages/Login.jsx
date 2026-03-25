@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMovieContext } from "../contexts/MovieContext";
 import "../css/Login.css";
@@ -17,21 +17,6 @@ function Login() {
         setFormValues({ ...formValues, [name]: value });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setFormErrors(validate(formValues));
-        setIsSubmit(true);
-    };
-
-    useEffect(() => {
-        if (Object.keys(formErrors).length === 0 && isSubmit) {
-            login(formValues).then(data => {
-                if (data.success) navigate("/")
-                else setFormErrors({ password: data.message })
-            })
-        }
-    }, [formErrors]);
-
     const validate = (values) => {
         const errors = {};
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -48,6 +33,28 @@ function Login() {
         }
         return errors;
     };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setFormErrors(validate(formValues));
+        setIsSubmit(true);
+    };
+
+    useEffect(() => {
+        if (Object.keys(formErrors).length === 0 && isSubmit) {
+            login(formValues).then((data) => {
+                if (data.success) {
+                    navigate("/");
+                } else {
+                    setFormErrors({ password: data.message || "Login failed" });
+                    setIsSubmit(false);
+                }
+            }).catch(err => {
+                console.error(err);
+                setIsSubmit(false);
+            });
+        }
+    }, [formErrors, isSubmit, login, formValues, navigate]); 
 
     return (
         <div className="login-page">
@@ -93,7 +100,9 @@ function Login() {
                     <p className="login-error-text">{formErrors.password}</p>
                 </div>
 
-                <button className="login-submit-btn">Submit</button>
+                <button className="login-submit-btn" type="submit">
+                    Submit
+                </button>
             </form>
         </div>
     );
