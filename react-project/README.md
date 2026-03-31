@@ -1,3 +1,5 @@
+[![CI/CD Pipeline](https://github.com/snizhanavovkpp2023-max/my-film_project/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/snizhanavovkpp2023-max/my-film_project/actions/workflows/ci-cd.yml)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

@@ -64,5 +64,71 @@
         "vote_count": 233
       }
     ]
+  },
+  {
+    "username": "snizhana",
+    "email": "snizhana9606@gmail.com",
+    "password": "1234",
+    "favorites": [
+      {
+        "adult": false,
+        "backdrop_path": "/u8DU5fkLoM5tTRukzPC31oGPxaQ.jpg",
+        "genre_ids": [
+          878,
+          12,
+          14
+        ],
+        "id": 83533,
+        "original_language": "en",
+        "original_title": "Avatar: Fire and Ash",
+        "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
+        "popularity": 369.7046,
+        "poster_path": "/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
+        "release_date": "2025-12-17",
+        "title": "Avatar: Fire and Ash",
+        "video": false,
+        "vote_average": 7.274,
+        "vote_count": 2013
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/6GuqUJ33BnWDAoVPZP55gDr5G55.jpg",
+        "genre_ids": [
+          28,
+          53
+        ],
+        "id": 1084187,
+        "original_language": "en",
+        "original_title": "Pretty Lethal",
+        "overview": "A troupe of ballerinas find themselves fighting for survival as they attempt to escape from a remote inn after their bus breaks down on the way to a dance competition.",
+        "popularity": 304.1287,
+        "poster_path": "/znTPnXCK3lEQJgqXCvP7e5FUz6f.jpg",
+        "release_date": "2026-03-13",
+        "title": "Pretty Lethal",
+        "video": false,
+        "vote_average": 6.803,
+        "vote_count": 145
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/tq3h43fZy0H80vzf47MAY7R9Mxo.jpg",
+        "genre_ids": [
+          16,
+          35,
+          10751
+        ],
+        "id": 1297842,
+        "original_language": "en",
+        "original_title": "GOAT",
+        "overview": "A small goat with big dreams gets a once-in-a-lifetime shot to join the pros and play roarball, a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world.",
+        "popularity": 276.7612,
+        "poster_path": "/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
+        "release_date": "2026-02-11",
+        "title": "GOAT",
+        "video": false,
+        "vote_average": 7.751,
+        "vote_count": 233
+      }
+    ]
   }
 ]
