@@ -26,7 +26,7 @@
 }
 
 .search-input:focus {
-  border-color: #e50914; /* Змінюємо колір рамки на червоний при кліку */
+  border-color: #e50914;
 }
 
 .search-button {
